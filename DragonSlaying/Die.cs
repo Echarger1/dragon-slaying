@@ -16,6 +16,7 @@ namespace DragonSlaying
         /// </summary>
         public Die() : this(6)
         {
+
         }
 
         /// <summary>
