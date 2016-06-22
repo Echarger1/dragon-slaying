@@ -16,7 +16,7 @@ namespace DragonSlaying
         /// </summary>
         public Die() : this(6)
         {
-
+           Random random = new Random.Next(20);
         }
 
         /// <summary>
@@ -34,8 +34,9 @@ namespace DragonSlaying
         /// <returns>A random number between 1 and <see cref="NumberOfSides"/></returns>
         public int Roll()
         {
-            // TODO
-            throw new NotImplementedException();
+            Random random = new Random();
+            int dieRoll = random.Next(20);
+
         }
     }
 }

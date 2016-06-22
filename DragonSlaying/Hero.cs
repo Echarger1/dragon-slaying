@@ -23,7 +23,7 @@ namespace DragonSlaying
             get
             {
                 // TODO
-                throw new NotImplementedException();
+                
             }
             set
             {
@@ -45,7 +45,7 @@ namespace DragonSlaying
         public override string ToString()
         {
             // TODO
-            throw new NotImplementedException();
+            
         }
 
 
