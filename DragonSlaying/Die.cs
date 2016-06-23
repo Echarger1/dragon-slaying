@@ -16,7 +16,6 @@ namespace DragonSlaying
         /// </summary>
         public Die() : this(6)
         {
-           Random random = new Random.Next(20);
         }
 
         /// <summary>
@@ -35,7 +34,7 @@ namespace DragonSlaying
         public int Roll()
         {
             Random random = new Random();
-            int dieRoll = random.Next(20);
+            int dieRoll = random.Next(21);
 
         }
     }
