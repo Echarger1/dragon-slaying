@@ -11,8 +11,8 @@ namespace DragonSlaying
         static Hero MyHero = new Hero
         {
             Name = "Brienne",
-            Offense = 4,
-            Defense = 2,
+            Offense = 10,
+            Defense = 5,
             MaxHitPoints = 500,
             HitPoints = 500,
         };
@@ -20,10 +20,10 @@ namespace DragonSlaying
         static Dragon MyEnemy = new Dragon
         {
             Name = "Drogon",
-            Offense = 16,
-            Defense = 12,
-            MaxHitPoints = 60,
-            HitPoints = 60
+            Offense = 20,
+            Defense = 15,
+            MaxHitPoints = 100,
+            HitPoints = 100
         };
 
 
@@ -46,6 +46,7 @@ namespace DragonSlaying
 
             while (MyHero.IsAlive())
             {
+                Console.ReadKey();
                 int attackRoll = myDie.Roll();
                 Console.WriteLine("Rolled {0} for attack phase", attackRoll);
                 MyHero.Attack(MyEnemy, attackRoll);
@@ -60,7 +61,7 @@ namespace DragonSlaying
                 Console.WriteLine("Rolled {0} for defense phase", defenseRoll);
                 MyHero.Defend(MyEnemy, defenseRoll);
                 Console.WriteLine(MyHero);
-                Console.ReadKey();
+                
             }
 
             if (!MyHero.IsAlive())
