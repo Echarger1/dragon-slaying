@@ -13,8 +13,8 @@ namespace DragonSlaying
             Name = "Brienne",
             Offense = 4,
             Defense = 2,
-            MaxHitPoints = 25,
-            HitPoints = 25,
+            MaxHitPoints = 500,
+            HitPoints = 500,
         };
 
         static Dragon MyEnemy = new Dragon
@@ -60,6 +60,7 @@ namespace DragonSlaying
                 Console.WriteLine("Rolled {0} for defense phase", defenseRoll);
                 MyHero.Defend(MyEnemy, defenseRoll);
                 Console.WriteLine(MyHero);
+                Console.ReadKey();
             }
 
             if (!MyHero.IsAlive())
