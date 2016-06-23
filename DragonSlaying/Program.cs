@@ -10,7 +10,7 @@ namespace DragonSlaying
     {
         static Hero MyHero = new Hero
         {
-            Name = "Brienne",
+            Name = "#YOLO",
             Offense = 10,
             Defense = 5,
             MaxHitPoints = 500,
